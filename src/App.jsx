@@ -6,7 +6,33 @@ import Typography from "@mui/material/Typography";
 import CloudIcon from "@mui/icons-material/Cloud";
 import Button from "@mui/material/Button";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 function App() {
+  const [temp, setTemp] = useState(null);
+  const [tempMin, setTempMin] = useState(null);
+  const [tempMax, setTempMax] = useState(null);
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.openweathermap.org/data/2.5/weather?lat=30.0444&lon=31.2357&units=metric&appid=501693104f01e393238c8c3e79cdb33e"
+      )
+      .then(function (response) {
+        const responseTemp = Math.round(response.data.main.temp);
+        setTemp(responseTemp);
+        const responseTempMin = response.data.main.temp_min;
+        setTempMin(responseTempMin);
+        const responseTempMax = response.data.main.temp_max;
+        setTempMax(responseTempMax);
+        console.log(responseTempMin, responseTempMax);
+      })
+      .catch(function (error) {
+        console.error(error);
+        console.log(error);
+      });
+  }, []);
+
   return (
     <>
       <Container maxWidth="sm">
@@ -59,7 +85,7 @@ function App() {
                   {/* TEMP */}
                   <div>
                     <Typography variant="h1" sx={{ textAlign: "right" }}>
-                      38
+                      {temp}°C
                     </Typography>
                     {/* TODO :: Image  */}
                   </div>
@@ -73,9 +99,9 @@ function App() {
                       alignItems: "center",
                     }}
                   >
-                    <h5>الصغرى : 25</h5>
+                    <h5>الصغرى : {tempMin}</h5>
                     <h5 style={{ margin: "0px 10px" }}>|</h5>
-                    <h5>الكبرى : 25</h5>
+                    <h5>الكبرى : {tempMax}</h5>
                   </div>
                 </div>
                 {/* ** DEGRE & DESCRIPTION */}
