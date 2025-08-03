@@ -8,12 +8,11 @@ import Button from "@mui/material/Button";
 
 import axios from "axios";
 import { useEffect, useState } from "react";
-import moment from "moment";
+import { useTranslation } from "react-i18next";
 
 function App() {
-  // const [temp, setTemp] = useState(null);
-  // const [tempMin, setTempMin] = useState(null);
-  // const [tempMax, setTempMax] = useState(null);
+  const { t, i18n } = useTranslation();
+
   const [temp, setTemp] = useState({
     number: null,
     description: null,
@@ -47,7 +46,6 @@ function App() {
         // "https://api.openweathermap.org/data/2.5/weather?lat=30.0444&lon=31.2357&units=metric&appid=501693104f01e393238c8c3e79cdb33e"
       )
       .then(function (response) {
-        console.log(response);
         const number = Math.round(response.data.main.temp);
         const max = response.data.main.temp_max;
         const min = response.data.main.temp_min;
@@ -67,6 +65,11 @@ function App() {
       .catch(function (error) {
         console.error(error);
       });
+  }, []);
+
+  // Change lang
+  useEffect(() => {
+    i18n.changeLanguage("ar");
   }, []);
 
   return (

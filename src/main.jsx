@@ -5,6 +5,9 @@ import App from "./App.jsx";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme.jsx";
 
+// Translation
+import "./i18n.js";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
