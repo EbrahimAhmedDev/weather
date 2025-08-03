@@ -53,9 +53,10 @@ yarn install
 yarn dev
 ```
 
-## 🧑 Devoloper
+## 🧑 Developer
 
 **Ebrahim Ahmed**  
-Frontend Developer
+Frontend Developer (Full Stack coming soon)
 
 - GitHub: [github.com/EbrahimAhmedDev](https://github.com/EbrahimAhmedDev)
+
