@@ -1,12 +1,61 @@
-# React + Vite
+# 🌤️ Cairo Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple weather app built using **React + Vite**, displaying the current weather in **Cairo, Egypt**. It supports both **Arabic** and **English** languages with automatic direction adjustment (RTL/LTR), and fetches real-time weather data from the **OpenWeatherMap API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+### Arabic Interface 🇦🇪
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Arabic Screenshot](/screenshots%20for%20readme/ar.png)
+
+### English Interface 🇬🇧
+
+![English Screenshot](/screenshots%20for%20readme/en.png)
+
+> 📝 You can place screenshots in a `/screenshots for readme` folder and update the image paths as needed.
+
+---
+
+## 🚀 Features
+
+- ✅ Displays current temperature in °C.
+- ✅ Shows max and min temperature.
+- ✅ Weather condition description (e.g., cloudy, sunny, rainy...).
+- ✅ Weather icon synced with the condition.
+- ✅ Current date and day of the week formatted based on the selected language.
+- ✅ Smooth language switching with layout direction change (`rtl`/`ltr`).
+- ✅ Clean and modern UI built with **Material UI (MUI)**.
+
+---
+
+## 🧰 Tech Stack
+
+| Tool / Library          | Purpose                    |
+| ----------------------- | -------------------------- |
+| React + Vite            | Frontend framework         |
+| Material UI (MUI)       | UI components and styling  |
+| Axios                   | Fetching data from API     |
+| OpenWeatherMap API      | Source of weather data     |
+| i18next + react-i18next | Multi-language translation |
+
+---
+
+## ⚙️ Getting Started
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+yarn install
+yarn dev
+```
+
+## 🧑 Devoloper
+
+**Ebrahim Ahmed**  
+Frontend Developer
+
+- GitHub: [github.com/EbrahimAhmedDev](https://github.com/EbrahimAhmedDev)
