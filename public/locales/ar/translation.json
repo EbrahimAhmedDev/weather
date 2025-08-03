@@ -1,6 +1,12 @@
 {
-  "Hello World": "اهلا بالعالم",
-  "Welcome": "مرحبا بك",
-  "Today": "اليوم",
-  "Temperature": "درجة الحرارة"
+  "min": "الصغرى",
+  "max": "الكبرى",
+  "cairo": "القاهرة",
+  "sunday": "الأحد",
+  "monday": "الاثنين",
+  "tuesday": "الثلاثاء",
+  "wednesday": "الأربعاء",
+  "thursday": "الخميس",
+  "friday": "الجمعة",
+  "saturday": "السبت"
 }
