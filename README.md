@@ -6,7 +6,7 @@ A simple weather app built using **React + Vite**, displaying the current weathe
 
 ## 📸 Screenshots
 
-### Arabic Interface 🇦🇪
+### Arabic Interface 🇪🇬
 
 ![Arabic Screenshot](/screenshots%20for%20readme/ar.png)
 
