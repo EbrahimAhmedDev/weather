@@ -47,7 +47,7 @@ A simple weather app built using **React + Vite**, displaying the current weathe
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/EbrahimAhmedDev/weather-app.git
+git clone https://github.com/EbrahimAhmedDev/weather
 cd weather-app
 yarn install
 yarn dev
